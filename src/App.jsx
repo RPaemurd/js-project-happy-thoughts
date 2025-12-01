@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { ThoughtForm } from './components/ThoughtForm'
 
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
 
   return (
     <>
+      <ThoughtForm />
     </>
   )
 }
