@@ -17,11 +17,11 @@ export const ThoughtForm = () => {
         />
         <button
           type="submit"
-          className="mt-3 bg-red-200 text-black-700 font-semibold py-3 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-red-300 transition-colors"
+          className="mt-3 bg-red-200 text-black-700 font-semibold py-3 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-red-300 hover:text-white transition-colors"
         >
-          <span role="img" aria-label="heart emoji">❤️</span>
+          <img src="./public/heart.png" alt="heart emoji"class="w-4" />
           Send Happy Thought
-          <span role="img" aria-label="heart emoji">❤️</span>
+          <img src="./public/heart.png" alt="heart emoji" class="w-4" />
         </button>
       </form>
     </div>
