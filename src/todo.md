@@ -20,9 +20,9 @@ Radera en post
 
 
 ## TODO
-- [ ] Göra ThoughtsCard
+- [X] Göra ThoughtsCard
 - [ ] Göra en About Page
-- [ ] Göra en toughtslist
+- [X] Göra en toughtslist
 
 ## Viktigt
 - [ ] error handeling 
