@@ -1,12 +1,11 @@
-import React from "react";
 
-export const ThoughtForm = () => {
+const ThoughtForm = () => {
   return (
 <div className="mx-4 md:mx-auto my-8 bg-gray-100 border-1 border-solid p-4 shadow-lg max-w-md relative">      {/* This creates the black shadow effect */}
       <div className="absolute top-2 left-2 w-full h-full bg-black -z-10"></div>
       
       <form>
-        <label htmlFor="happy-thought" className="block text-gray-800 font-semibold mb-2">
+        <label htmlFor="happy-thought" className="block text-gray- font-semibold mb-2">
           What's making you happy right now?
         </label>
         <textarea
@@ -27,3 +26,5 @@ export const ThoughtForm = () => {
     </div>
   );
 };
+
+export default ThoughtForm;
