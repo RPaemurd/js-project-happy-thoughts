@@ -1,34 +1,31 @@
 import { useState } from 'react'
 import ThoughtForm from './components/ThoughtForm'
-import ThoughtCard from './components/ThoughtCard'
 import ThoughtList from './components/ThoughtList'
 
 
 function App() {
   /* const [count, setCount] = useState(0) */
+  const [thoughts, setThoughts] = useState([
 
-  const thoughtslist = [
+    ]);
 
-      {
-        _id: "1",
-        message: "Hej detta är test 1"
-      },
-      {
-        _id: "2",
-        message: "Hej detta är test 2"
-      },
-      {
-        _id: "3",
-        message: "Hej detta är test 3"
-      }
+      const addThought = (message) => { //Skapar ett objekt, det som API:t senare skall göra
 
-    ];
+      const newToughtObject = {
+        _id: Date.now(),
+        message: message,
+        hearts: 0,
+        createdAt: new Date().toISOString()
+      };
+
+      setThoughts([newToughtObject, ...thoughts]);
+      }; /* Ta alla gamla tankar (...thoughts) och lägg den nya FÖRST */
 
   return (
 
     <div>
-      <ThoughtForm />
-      <ThoughtList thoughts={thoughtslist} />
+      <ThoughtForm addThought={addThought} />
+      <ThoughtList thoughts={thoughts} />
     </div>
   );
 };

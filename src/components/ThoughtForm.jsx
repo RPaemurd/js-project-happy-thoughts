@@ -1,14 +1,26 @@
+import { useState } from "react";
 
-const ThoughtForm = () => {
+const ThoughtForm = ({addThought}) => {
+  const [newThought, setNewThought] = useState ("")
+
+    const handleFormSubmit = (e) => {
+        e.preventDefault(); //Hindrar webbläsaren för att skicka iväg input, default beteende
+        addThought(newThought);
+        setNewThought("");
+    };
+
+
+
   return (
 <div className="mx-4 md:mx-auto my-8 bg-gray-100 border-1 border-solid p-4 shadow-lg max-w-md relative">      {/* This creates the black shadow effect */}
       <div className="absolute top-2 left-2 w-full h-full bg-black -z-10"></div>
       
-      <form>
+      <form onSubmit={handleFormSubmit}> {/* här använder vi onSubmit, då det går att trycka på knappen samt enter */}
         <label htmlFor="happy-thought" className="block text-gray- font-semibold mb-2">
           What's making you happy right now?
         </label>
         <textarea
+          value={newThought} onChange={e => setNewThought(e.target.value)}
           id="happy-thought"
           rows="2"
           className="w-full p-2 border focus:outline-none focus:ring-1"
