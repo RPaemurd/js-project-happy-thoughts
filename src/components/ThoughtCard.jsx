@@ -12,7 +12,7 @@ function ThoughtCard({thought}) {
       <div className="flex items-center justify-between">
         {/* Hearts section */}
         <button className="flex items-center gap-2 hover:scale-110 transition-transform">
-          <img src="./public/heart.png" alt="heart emoji"class="w-4" />
+          <img src="./heart.png" alt="heart emoji"className="w-4" />
           <span className="text-sm font-semibold text-gray-700">x </span>
         </button>
 

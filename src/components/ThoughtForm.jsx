@@ -30,9 +30,9 @@ const ThoughtForm = ({addThought}) => {
           type="submit"
           className="mt-3 bg-red-200 text-black-700 font-semibold py-3 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-red-300 hover:text-white transition-colors"
         >
-          <img src="./public/heart.png" alt="heart emoji"class="w-4" />
+          <img src="./heart.png" alt="heart emoji"className="w-4" />
           Send Happy Thought
-          <img src="./public/heart.png" alt="heart emoji" class="w-4" />
+          <img src="./heart.png" alt="heart emoji" className="w-4" />
         </button>
       </form>
     </div>
