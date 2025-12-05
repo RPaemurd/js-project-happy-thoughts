@@ -21,7 +21,7 @@ Radera en post
 
 ## TODO
 - [X] Göra ThoughtsCard
-- [ ] Göra en About Page
+- [X] Göra en About Page
 - [X] Göra en toughtslist
 
 ## Viktigt

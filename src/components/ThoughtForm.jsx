@@ -12,7 +12,7 @@ const ThoughtForm = ({addThought}) => {
 
 
   return (
-<div className="mx-4 md:mx-auto my-8 bg-gray-100 border-1 border-solid p-4 shadow-lg max-w-md relative">      {/* This creates the black shadow effect */}
+<div className="mx-4 md:mx-auto mt-44 bg-gray-100 border-1 border-solid p-4 shadow-lg max-w-md relative">      {/* This creates the black shadow effect */}
       <div className="absolute top-2 left-2 w-full h-full bg-black -z-10"></div>
       
       <form onSubmit={handleFormSubmit} > {/* här använder vi onSubmit, då det går att trycka på knappen samt enter */}
