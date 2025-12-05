@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import ThoughtCard from './ThoughtCard';
 
-function ThoughtList({thoughts}) {
+function ThoughtList({thoughts = [] }) {
+ 
+/*       const [thoughts, setThoughts] = useState([]);
+ */
 
     return (
         

@@ -1,19 +1,19 @@
-import { useState, useEffect } from 'react';
+/* import { useState, useEffect } from 'react';
 import { fetchThoughts } from '../api/thoughts'
 
 function FetchThoughts() { 
   const [thoughts, setThoughts] = useState([]);
 
-      /* const addThought = (message) => { //Skapar ett objekt, det som API:t senare skall göra
+      const addThought = (message) => { //Skapar ett objekt, det som API:t senare skall göra
 
       const newToughtObject = {
         _id: Date.now(),
         message: message,
         hearts: 0,
         createdAt: new Date().toISOString()
-      }; */
+      };
 
-      useEffect (() => {
+      /* useEffect (() => {
         fetchThoughts()
         .then((data) => {
             const mapped = setThoughts.map((t) => ({
@@ -27,7 +27,7 @@ function FetchThoughts() {
       return {
             thoughts,
             setThoughts
-        };
+        }; 
 }
 
-export default FetchThoughts
+export default FetchThoughts */
