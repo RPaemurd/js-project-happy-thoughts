@@ -38,7 +38,7 @@ function App() {
               created by Rebecca Sighed &nbsp;|&nbsp;
               <Link
                 to='/about'
-                className="text-[#ff7a63ff] underline hover:text-red-700"
+                className="text-[#ff7a63ff] underline hover:text-red-900"
               >
                 About this app
               </Link>

@@ -25,7 +25,7 @@ const ThoughtForm = ({addThought}) => {
           placeholder="React is making me happy!"
           maxLength={140}
         />
-        <span className="text-xs text-gray-400">
+        <span className="text-xs text-gray-500">
             {140 - newThought.length} / 140
           </span>
         <button

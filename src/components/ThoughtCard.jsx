@@ -22,11 +22,11 @@ function ThoughtCard({ thought, onLike }) {
              <img src="./heart.png" alt="heart emoji" className="w-4" />
           </div>
           
-          <span className="text-sm font-semibold text-gray-700">x {thought.hearts} </span>
+          <span className="text-sm font-semibold text-gray-800">x {thought.hearts} </span>
         </button>
 
         {/* Timestamp */}
-        <span className="text-sm text-gray-400">
+        <span className="text-sm text-gray-500">
           {formatDistanceToNow(new Date(thought.createdAt), { addSuffix: true })}
         </span>
       </div>
